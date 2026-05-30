@@ -9,7 +9,7 @@
   * { margin: 0; padding: 0; box-sizing: border-box; }
   html, body { height: 100%; }
   body { background: #1a1a1a; display: flex; align-items: center; justify-content: center; height: 100vh; }
-  img { max-width: 100vw; max-height: 100vh; object-fit: contain; display: block; margin: auto; }
+  img { max-width: 100vw; max-height: 100vh; object-fit: contain; display: block; }
 </style>
 </head>
 <body>
@@ -31,10 +31,7 @@ const photos = [
   "https://i.imgur.com/nfeUvoz.jpeg",
   "https://i.imgur.com/VITvuMr.jpeg"
 ];
-function pickRandom() {
-  document.getElementById('photo').src = photos[Math.floor(Math.random() * photos.length)];
-}
-window.addEventListener('pageshow', pickRandom);
+document.getElementById('photo').src = photos[Math.floor(Math.random() * photos.length)];
 </script>
 </body>
 </html>
