@@ -5,36 +5,26 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Cache-Control" content="no-store">
 <title>✨</title>
-<style>
-  * { margin: 0; padding: 0; box-sizing: border-box; }
-  html, body { width: 100%; height: 100%; }
-  body { background: #1a1a1a; display: flex; align-items: center; justify-content: center; overflow: hidden; }
-  img { max-width: 100%; max-height: 100vh; width: auto; height: auto; display: block; }
-</style>
 </head>
 <body>
-<img id="photo" alt="Random photo">
 <script>
 const photos = [
-  "https://i.imgur.com/lvIThJ7.jpeg",
-  "https://i.imgur.com/nIdWqEp.jpeg",
-  "https://i.imgur.com/oCUY3W7.jpeg",
-  "https://i.imgur.com/L1ENeIr.jpeg",
-  "https://i.imgur.com/S4mDoIC.jpeg",
-  "https://i.imgur.com/TEagbKr.jpeg",
-  "https://i.imgur.com/Bu00j2e.jpeg",
-  "https://i.imgur.com/hSkhLCR.jpeg",
-  "https://i.imgur.com/l41GZu3.jpeg",
-  "https://i.imgur.com/PM5ROsJ.jpeg",
-  "https://i.imgur.com/HooY6PR.jpeg",
-  "https://i.imgur.com/gNHvwds.jpeg",
-  "https://i.imgur.com/nfeUvoz.jpeg",
-  "https://i.imgur.com/VITvuMr.jpeg"
+  "https://imgur.com/lvIThJ7",
+  "https://imgur.com/nIdWqEp",
+  "https://imgur.com/oCUY3W7",
+  "https://imgur.com/L1ENeIr",
+  "https://imgur.com/S4mDoIC",
+  "https://imgur.com/TEagbKr",
+  "https://imgur.com/Bu00j2e",
+  "https://imgur.com/hSkhLCR",
+  "https://imgur.com/l41GZu3",
+  "https://imgur.com/PM5ROsJ",
+  "https://imgur.com/HooY6PR",
+  "https://imgur.com/gNHvwds",
+  "https://imgur.com/nfeUvoz",
+  "https://imgur.com/VITvuMr"
 ];
-function pickRandom() {
-  document.getElementById('photo').src = photos[Math.floor(Math.random() * photos.length)];
-}
-window.addEventListener('pageshow', pickRandom);
+window.location.replace(photos[Math.floor(Math.random() * photos.length)]);
 </script>
 </body>
 </html>
