@@ -3,6 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Cache-Control" content="no-store">
 <title>✨</title>
 <style>
   * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -29,7 +30,10 @@ const photos = [
   "https://i.imgur.com/nfeUvoz.jpeg",
   "https://i.imgur.com/VITvuMr.jpeg"
 ];
-document.getElementById('photo').src = photos[Math.floor(Math.random() * photos.length)];
+function pickRandom() {
+  document.getElementById('photo').src = photos[Math.floor(Math.random() * photos.length)];
+}
+window.addEventListener('pageshow', pickRandom);
 </script>
 </body>
 </html>
